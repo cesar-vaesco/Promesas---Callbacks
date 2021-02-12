@@ -1,12 +1,12 @@
 
 
 const heroes = {
-  capi:{
+  capi: {
     nombre: 'Capitán América',
     poder: 'Aguantar inyecciones sin morir'
   },
   iron: {
-    nombre:'Ironman',
+    nombre: 'Ironman',
     poder: 'Absurda cantidad de dinero'
   },
   spider: {
@@ -18,14 +18,14 @@ const heroes = {
 // contrato de la función buscarHeroe
 export const buscarHeroe = (id, callback) => {
 
-    const heroe = heroes[id];
+  const heroe = heroes[id];
 
-    callback( heroe );
-}
+  if (heroe) {
+    callback(null, heroe);
 
-export const saludar = (saludo, callback) => {
-
-   saludo = 'César';
-
-  callback( saludo );
+  } else {
+    // Un error
+    callback(`No existe un héroe con el id ${id}`);
+  }
+  //callback( heroe );
 }
