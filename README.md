@@ -1,4 +1,4 @@
-# webpack-configuracion-estandar
+# Promesas - callbacks
 
 
 
@@ -15,5 +15,4 @@ Y para crear nuevamente el DIST / lanzar el servidor de desarrollo
 npm start
 ```
 
-Desplegado en:  [https://cesar-vaesco.github.io/webpack-start/](https://cesar-vaesco.github.io/webpack-start/).
-
+Desplegado en:  [sin despliegue - prácticas](ruta).
