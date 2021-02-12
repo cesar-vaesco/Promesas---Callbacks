@@ -1,0 +1,7 @@
+/* Este es el estilo del main */
+html, body {
+    background-color: rgb(216 177 130);
+}
+h1{
+    color: darkgreen;
+}
