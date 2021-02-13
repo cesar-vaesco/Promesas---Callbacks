@@ -21,7 +21,9 @@ export const buscarHeroe = (id) => {
   return new Promise((resolve, reject) => {
 
     if (heroe) {
-      resolve(heroe);
+      setTimeout(() => {
+        resolve(heroe);
+      }, 1000);
     } else {
       reject(`No existe un héroe con el id ${id}`);
     }
@@ -37,7 +39,7 @@ export const buscarHeroeAsync = async (id) => {
   if (heroe) {
     return (heroe);
   } else {
-    throw  (`No existe un héroe con el id ${id}`);  /*-- Cuando se sabe el tipo de error se maneja así --*/
+    throw (`No existe un héroe con el id ${id}`);  /*-- Cuando se sabe el tipo de error se maneja así --*/
     //throw Error();  /*-- Ciando no se sabe cual es el error --*/
 
   }
