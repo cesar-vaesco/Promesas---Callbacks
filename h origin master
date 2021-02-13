@@ -1,0 +1,13 @@
+* [31m894cfd7[m -[33m (HEAD -> promes)[m Pro-ca: manejo del error con await [32m(5 seconds ago) [1;34m[m
+* [31m3f9ab71[m -[33m[m Pro-ca: tip- manejar await usando un map [32m(14 minutes ago) [1;34m[m
+* [31m23c413b[m -[33m[m Pro-ca: tip- manejar await con un ciclo for [32m(17 minutes ago) [1;34m[m
+* [31mfb7bb9d[m -[33m (origin/promes)[m Pro-ca: usando el await en una función [32m(26 minutes ago) [1;34m[m
+* [31md9d9a64[m -[33m[m Pro-ca: declarando una función como asíncrona usando ** async ** [32m(44 minutes ago) [1;34m[m
+* [31m6639a8d[m -[33m[m Pro-ca: promesas.race devolvuendo una de n promesas que se cumple o se rechaza [32m(8 hours ago) [1;34m[m
+* [31mcb6bceb[m -[33m[m Pro-ca: manejo de errores con catch - finally de las promesas [32m(9 hours ago) [1;34m[m
+* [31mf4a2b60[m -[33m[m Pro-ca: conociendo las promesas all [32m(9 hours ago) [1;34m[m
+* [31m11c8a70[m -[33m[m Pro-ca: conociendo las promesas [32m(32 hours ago) [1;34m[m
+* [31m5b4224b[m -[33m[m Pro-ca: ejemplo de Callback hell [32m(33 hours ago) [1;34m[m
+* [31mb87c09d[m -[33m[m Pro-ca: Argumento estándar de los callbacks (error) [32m(33 hours ago) [1;34m[m
+* [31md4ce633[m -[33m[m Pro-ca: Conociendo las promesas [32m(2 days ago) [1;34m[m
+* [31m3f66ef4[m -[33m (origin/master, master)[m Pro-ca: inicializando proyecto promesas - callbacks [32m(2 days ago) [1;34m[m
