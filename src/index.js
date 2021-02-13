@@ -1,4 +1,12 @@
+import { promesaLenta, promesaMedia, promesaRapida } from './js/promesas';
 
-import './styles.css'
 
-c
+// promesaLenta.then(mensaje => console.log(mensaje));
+// promesaLenta.then(console.log);
+// promesaMedia.then(console.log);
+// promesaRapida.then(console.log);
+
+Promise.race([promesaLenta, promesaMedia, promesaRapida])
+       .then(mensaje => console.log(mensaje));
+
+      //  Promise.race resibe varias promesas y resuelve la primera que se resuelve
