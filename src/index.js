@@ -1,4 +1,4 @@
-import { obtenerHeroesArr, obtenerHeroeAwait, heroesCiclo } from "./js/await";
+import { obtenerHeroesArr, obtenerHeroeAwait, heroesCiclo, heroesIfAwait } from "./js/await";
 
 
 // console.time('await');
@@ -11,5 +11,7 @@ import { obtenerHeroesArr, obtenerHeroeAwait, heroesCiclo } from "./js/await";
 
 // // console.log('Heroes: ', heroes);
 // // console.log( heroes);
+
+heroesIfAwait('iron');
 
 heroesCiclo();

@@ -41,3 +41,11 @@ export const heroesCiclo = async () => {
   // heroes.forEach( console.log) ;
   //console.log( heroes );
 }
+
+export const heroesIfAwait = async (id) =>{
+  if ((await buscarHeroeAsync(id)).nombre  === 'Ironman'){
+    console.log('Es el mejor de todos');
+  }else {
+    console.log('Naaaa');
+  }
+}
