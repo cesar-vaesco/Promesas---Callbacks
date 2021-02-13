@@ -33,8 +33,28 @@ const heroeId3 = 'iron';
 
 // });
 
-buscarHeroe( heroeId1).then(heroe =>{
-  console.log(`Enviado ${heroe.nombre } a la misión`);
+// buscarHeroe(heroeId1).then(heroe1 => {
+//   // console.log(`Enviado ${heroe.nombre } a la misión`);
+//   buscarHeroe(heroeId2).then(heroe2 => {
+//     console.log(`Enviado a ${heroe1.nombre} y a ${heroe2.nombre} a la misión`);
+//   });
+// });
+
+// Promise.all([true, 'hola', 123]).then(arr => {
+//   console.log('promese.all: ',arr);
+// });
+
+Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)]).then(heroes => {
+  console.warn('Ejemplo de promise.all');
+  console.log(`Enviado a ${heroes[0].nombre} y a ${heroes[1].nombre} a la misión`);
+});
+
+
+
+Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)])
+  .then( ([heroe1, heroe2]) =>{
+    console.warn('Ejemplo de promise.all con desestructuración...');
+  console.log(`Enviado a ${heroe1.nombre} y a ${heroe2.nombre} a la misión`);
 });
 
 console.log('Fin del programa....');
