@@ -6,18 +6,20 @@ const heroesIds = ['capi', 'iron', 'spider'];
 
 export const obtenerHeroesArr = async() => {
 
-  const heroesArr = [];
+  return await Promise.all(heroesIds.map( buscarHeroe ));
 
-  for (const id of heroesIds) {
+  // const heroesArr = [];
 
-    heroesArr.push(buscarHeroe(id));
+  // for (const id of heroesIds) {
 
-  }
+  //   heroesArr.push(buscarHeroe(id));
 
-  // setTimeout(() => {
-  //   console.log('Obtener heroes');
-  //   console.log( heroesArr);
-  // }, 1000);
+  // }
 
-  return await Promise.all(heroesArr);
+  // // setTimeout(() => {
+  // //   console.log('Obtener heroes');
+  // //   console.log( heroesArr);
+  // // }, 1000);
+
+  // return await Promise.all(heroesArr);
 };
