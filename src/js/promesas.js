@@ -29,6 +29,19 @@ export const buscarHeroe = (id) => {
   });
 }
 
+export const buscarHeroeAsync = async (id) => {
+
+  const heroe = heroes[id];
+
+
+  if (heroe) {
+    return (heroe);
+  } else {
+    throw  (`No existe un héroe con el id ${id}`);  /*-- Cuando se sabe el tipo de error se maneja así --*/
+    //throw Error();  /*-- Ciando no se sabe cual es el error --*/
+
+  }
+}
 const promesaLenta = new Promise((resolve, reject) => {
   setTimeout(() => resolve('Promesa lenta'), 2000);
 });
@@ -43,5 +56,5 @@ const promesaRapida = new Promise((resolve, reject) => {
 export {
   promesaLenta,
   promesaMedia,
-  promesaRapida
+  promesaRapida,
 }
